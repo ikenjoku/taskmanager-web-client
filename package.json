@@ -1,0 +1,19 @@
+{
+    "name": "task-web",
+    "version": "1.0.0",
+    "description": "Web client for Task Manager App",
+    "scripts": {
+        "start": "npm run build && npm run server",
+        "server": "http-server public -p 3001",
+        "build": "browserify src -t babelify -o public/js/app.js"
+    },
+    "author": "Ike Njoku",
+    "dependencies": {
+        "babel-preset-env": "^1.6.1",
+        "babelify": "^7.2.0",
+        "browser-request": "^0.3.3",
+        "browserify": "^13.0.0",
+        "http-server": "^0.9.0",
+        "tiny-emitter": "^1.0.2"
+    }
+}
